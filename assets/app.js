@@ -9,7 +9,7 @@ import Landscape from "./components/Landscape/Landscape";
 import './app.module.scss';
 
 import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
-import apiMySql from "./config/apiMySql";
+import apiPgsql from "./config/apiMySql";
 
 
 const LazyHaikuList = lazy(() => import('./features/haikus'))
@@ -35,7 +35,7 @@ class App extends Component {
 
     loadingHaikus() {
 
-        apiMySql.get('/haikus/list')
+        apiPgsql.get('/haikus/list')
             .then ( res => {
                     this.setState({
                         haikus: res.data,
@@ -45,7 +45,7 @@ class App extends Component {
     }
 
     loadingHomepage() {
-        apiMySql.get('/homepage')
+        apiPgsql.get('/homepage')
             .then( res => {
                 this.setState({
                     homepage: res.data,
