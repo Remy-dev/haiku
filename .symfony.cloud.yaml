@@ -32,7 +32,6 @@ web:
 relationships:
     database: "haikuDatabase:mysql"
 
-
 mounts:
     "/var": { source: local, source_path: var }
 
