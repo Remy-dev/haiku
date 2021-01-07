@@ -2,11 +2,10 @@ version: '3'
 
 services:
   database:
-    image: mysql
+    image: postgresql:13-alpine
     environment:
-      MYSQL_ROOT_PASSWORD: lpati24eulVR5UeldaedarpditeanblldpovaPaea0eap4ap211aene
-      MYSQL_USER: aped2452apPE2
-      MYSQL_PASSWORD: a2Eurapetdptlp4padepdcnajplo5aidetaéj3eda5ajapnOEAPaeapaeEpAbAeRODTENau5
-      MYSQL_DB: haikus
+      POSTGRES_USER: aped2452apPE2
+      POSTGRES_PASSWORD: a2Eurapetdptlp4padepdcnajplo5aidetaéj3eda5ajapnOEAPaeapaeEpAbAeRODTENau5
+      POSTGRES_DB: haikus
     ports:
-    - 5432
+      - 5432

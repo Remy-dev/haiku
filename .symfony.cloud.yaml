@@ -9,7 +9,7 @@ runtime:
         - sodium
         - ctype
         - iconv
-        - pdo_mysql
+        - pdo_pgsql
 
 
 #variables:
@@ -30,7 +30,7 @@ web:
             passthru: "/index.php"
 
 relationships:
-    database: "haikudatabase:mysql"
+    database: "haikudatabase:postgresql"
 
 mounts:
     "/var": { source: local, source_path: var }
