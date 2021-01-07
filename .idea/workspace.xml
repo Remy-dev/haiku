@@ -6,23 +6,6 @@
       <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/Adduser.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/Listuser.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/conf/axios-conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/app.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/Footer/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/Footer/Footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/Header/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/Header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/Landscape/Landscape.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/Landscape/Landscape.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/NotFound/NotFound.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/components/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/config/apiMySql.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/Haiku.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/Haiku.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/features/haikus/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HaikuController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/HomePageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/index.css" beforeDir="false" />
@@ -30,27 +13,8 @@
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Haïku.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Haïku.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers/hello_controller.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.symfony.cloud.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.symfony.cloud.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +184,7 @@
       <workItem from="1609144131557" duration="15695000" />
       <workItem from="1609841855214" duration="20574000" />
       <workItem from="1609922705772" duration="14551000" />
-      <workItem from="1610013140447" duration="7234000" />
+      <workItem from="1610013140447" duration="8988000" />
     </task>
     <servers />
   </component>

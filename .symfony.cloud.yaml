@@ -9,7 +9,7 @@ runtime:
         - sodium
         - ctype
         - iconv
-        
+
 
 #variables:
 #    php:
@@ -28,7 +28,8 @@ web:
             expires: 1h
             passthru: "/index.php"
 
-
+relationships:
+    database: "mydatabase:mysql"
 
 mounts:
     "/var": { source: local, source_path: var }
@@ -38,7 +39,7 @@ hooks:
         set -x -e
 
         curl -fs https://get.symfony.com/cloud/configurator | (>&2 bash)
-        
+
         (>&2 symfony-build)
 
     deploy: |
