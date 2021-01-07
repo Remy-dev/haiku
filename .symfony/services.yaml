@@ -1,0 +1,4 @@
+haikuDatabase:
+  type: mysql:8.0.22
+  disk: 1024
+  size: S
