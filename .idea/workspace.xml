@@ -12,11 +12,9 @@
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.symfony.cloud.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.symfony.cloud.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.symfony/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.symfony/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20210105145219.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +184,7 @@
       <workItem from="1609144131557" duration="15695000" />
       <workItem from="1609841855214" duration="20574000" />
       <workItem from="1609922705772" duration="14551000" />
-      <workItem from="1610013140447" duration="14167000" />
+      <workItem from="1610013140447" duration="14583000" />
     </task>
     <servers />
   </component>
