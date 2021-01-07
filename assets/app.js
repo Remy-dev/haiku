@@ -9,7 +9,7 @@ import Landscape from "./components/Landscape/Landscape";
 import './app.module.scss';
 
 import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
-import apiPgsql from "./config/apiMySql";
+import apiPgsql from "./config/apiPgsql";
 
 
 const LazyHaikuList = lazy(() => import('./features/haikus'))
