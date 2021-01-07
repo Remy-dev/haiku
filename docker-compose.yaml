@@ -2,7 +2,7 @@ version: '3'
 
 services:
   database:
-    image: postgresql:13-alpine
+    image: postgres:13-alpine
     environment:
       POSTGRES_USER: aped2452apPE2
       POSTGRES_PASSWORD: a2Eurapetdptlp4padepdcnajplo5aidetaéj3eda5ajapnOEAPaeapaeEpAbAeRODTENau5

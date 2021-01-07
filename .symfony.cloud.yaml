@@ -30,7 +30,7 @@ web:
             passthru: "/index.php"
 
 relationships:
-    database: "haikudatabase:postgresql"
+    database: "haikus:postgresql"
 
 mounts:
     "/var": { source: local, source_path: var }
