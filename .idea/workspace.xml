@@ -2,12 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f81b39a5-6159-4a89-bb37-3370780c52d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/Adduser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/Listuser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/conf/axios-conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/app.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Footer/Footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Footer/Footer.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Header/Header.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Landscape/Landscape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Landscape/Landscape.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/NotFound/NotFound.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/config/apiMySql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/Haiku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/Haiku.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/features/haikus/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/HaikuController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/HomePageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Haïku.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Haïku.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controllers/hello_controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/DefaultController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,20 +175,35 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
       <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/zenstruck/foundry" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="1m70QAY7HiAI24ntC7O4hOhZfH8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="redshift" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Hyperion/heroku" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/features/haikus/components" />
+      <recent name="$PROJECT_DIR$/assets/styles" />
+      <recent name="$PROJECT_DIR$/assets/components/Header" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -156,11 +214,29 @@
       <option name="presentableId" value="Default" />
       <updated>1608829303111</updated>
       <workItem from="1608829304233" duration="2593000" />
-      <workItem from="1608915360751" duration="1630000" />
+      <workItem from="1608915360751" duration="5021000" />
+      <workItem from="1609061948532" duration="25000" />
+      <workItem from="1609061983805" duration="8874000" />
+      <workItem from="1609144131557" duration="15695000" />
+      <workItem from="1609841855214" duration="20574000" />
+      <workItem from="1609922705772" duration="14551000" />
+      <workItem from="1610013140447" duration="7234000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

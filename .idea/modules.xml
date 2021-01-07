@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Haïku.iml" filepath="$PROJECT_DIR$/.idea/Haïku.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Dyma/React/axios_raining/.idea/axios_raining.iml" filepath="$PROJECT_DIR$/../Dyma/React/axios_raining/.idea/axios_raining.iml" />
     </modules>
   </component>
 </project>

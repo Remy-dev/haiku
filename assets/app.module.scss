@@ -1,0 +1,21 @@
+
+
+body {
+
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  background-color: #e7eff1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.separator {
+  width: 75%;
+}
+
+

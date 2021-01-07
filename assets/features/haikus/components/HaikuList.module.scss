@@ -1,0 +1,11 @@
+.haikus__list {
+  display: flex;
+  border: 1px solid black;
+  height: auto;
+  width: 50%;
+  margin: 2em;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
