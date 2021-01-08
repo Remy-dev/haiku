@@ -24,18 +24,18 @@ class App extends Component {
         }
     }
     componentDidMount() {
-        this.loadingHomepage();
+        this.loadingHaikus();
         this.setState({
             loading: false
         });
-        this.loadingHaikus();
 
+        this.loadingHomepage();
 
     }
 
     loadingHaikus() {
 
-        apiPgsql.get('/haikus/list')
+        apiPgsql.get('/api/haikus/list')
             .then ( res => {
                     this.setState({
                         haikus: res.data,
@@ -45,12 +45,14 @@ class App extends Component {
     }
 
     loadingHomepage() {
-        apiPgsql.get('/homepage')
+        console.log('hello');
+        apiPgsql.get('/api/homepage')
             .then( res => {
                 this.setState({
                     homepage: res.data,
                     loading: true
-                })},
+                })
+                console.log(res.status)},
                 error => console.log(error))
     }
 

@@ -9,7 +9,7 @@ export default class HaikuList extends Component {
 
     render() {
         const { haikus } = this.props;
-        console.log(haikus);
+        console.log('render haiku list ', haikus);
         return (
             <>
                 <h4 className="haikus__title">mes derniers haikus</h4>

@@ -15,7 +15,7 @@ class HomePageController extends AbstractController {
      */
     public function homePage(HomePageRepository $homePageRepository): Response {
 
-        $homepage = $homePageRepository->find(1);
+        $homepage = $homePageRepository->findBy([], ['id' => 'ASC']);
 
         return $this->json(
             $homepage,
