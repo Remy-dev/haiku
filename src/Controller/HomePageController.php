@@ -19,7 +19,7 @@ class HomePageController extends AbstractController {
 
         return $this->json(
             $homepage,
-            Response::HTTP_OK
+            !empty($homepage) ? Response::HTTP_OK : Response::HTTP_NO_CONTENT
         );
     }
 }
