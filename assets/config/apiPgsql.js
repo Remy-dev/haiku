@@ -1,7 +1,7 @@
 import * as axios from 'axios'
 
 let apiPgsql = {};
-console.log(process.env.NODE_ENV)
+console.log('environement ', process.env);
 if(process.env.NODE_ENV === 'development'){
     apiPgsql = axios.create({
         baseURL: 'http://127.0.0.1:8000',

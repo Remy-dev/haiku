@@ -6,11 +6,9 @@ const Landscape = ({ homepage }) => {
       return (
           <div className="landscape">
              <img src={LandscapeImage} alt="Smiley face" width="300px" height="300px" />
-                 { homepage && homepage.map( (h, index) => (
-                     <p className="landscape__presentation">
-                         {h.presentation}
-                     </p>
-                 )) }
+                 <p className="landscape__presentation">
+                     {homepage.presentation}
+                 </p>
 
           </div>
       )

@@ -19,7 +19,7 @@ class App extends Component {
         super(props);
         this.state = {
             haikus: [],
-            homepage: [],
+            homepage: {},
             loading: false
         }
     }
@@ -49,10 +49,10 @@ class App extends Component {
         apiPgsql.get('/api/homepage')
             .then( res => {
                 this.setState({
-                    homepage: res.data,
+                    homepage: res.data[0],
                     loading: true
                 })
-                console.log(res.status)},
+                console.log(res.data[0])},
                 error => console.log(error))
     }
 
