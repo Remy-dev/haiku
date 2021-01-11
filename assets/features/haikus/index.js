@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import HaikuList from "./components/HaikuList";
-import {Route, Switch} from "react-router-dom";
 
 class Haikus extends Component {
     constructor(props){

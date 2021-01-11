@@ -11,17 +11,17 @@ use Symfony\Component\Routing\Annotation\Route;
 class HaikuController extends AbstractController
 {
     /**
-     * @Route("/api/haikus/list", name="haiku_list", methods={"GET"})
+     * @Route("/api/homepage/haikus/list", name="homepage_haiku_list", methods={"GET"})
      * @param HaikuRepository $haikuRepository
      */
     public function list(HaikuRepository $haikuRepository) : Response
     {
-
-        $haikus = $haikuRepository->findAll();
+        $limit = 6;
+        $haikus = $haikuRepository->findBy([], ['id' => 'DESC'],  $limit);
 
         return $this->json(
             $haikus,
-            Response::HTTP_OK
+            !empty($haikus) ? Response::HTTP_OK : Response::HTTP_NO_CONTENT
         );
 
     }

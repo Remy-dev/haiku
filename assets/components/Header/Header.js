@@ -1,19 +1,19 @@
 import React from 'react';
-import './Header.module.scss'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import './Header.module.scss';
 
 const Header = ({ homepage }) => {
     return (
 
             <div className="header">
                 <h1>{ homepage.title }</h1>
-                <h3>{ homepage.subTitle }</h3>
-                <div className="navBar">
-                    <Link to="/haikus/all" className="navBar__button">Accueil</Link>
-                    <Link to="/haikus/meshaikus" className="navBar__button">Mes Haïkus</Link>
-                    <Link to="/haikus/rose" className="navBar__button">Rose</Link>
+                <div className="header__navBar">
+                    <NavLink to="/haikus/all" activeClassName="active" className="header__navBar-link">Accueil</NavLink>
+                    <NavLink to="/haikus/meshaikus" className="header__navBar-link">
+                       Mes Haïkus
+                    </NavLink>
+                    <NavLink to="/haikus/rose" className="header__navbar-link">Rose</NavLink>
                 </div>
-                <hr className="separator" />
             </div>
 
 

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "CormorantGaramond";
+  src: url("./assets/fonts/CormorantGaramontd/CormorantGaramond-Regular.ttf"),
+       url("./assets/fonts/CormorantGaramontd/CormorantGaramond-SemiBold.ttf")
+}
+$font-stack: CormorantGaramond, sans serif, serif, Arial;
+
+body {
+  margin: 0;
+  padding: 0;
+  font: $font-stack;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 5% 1fr 10% 1fr 1fr 5%;
+  grid-template-areas: "header header header header header header"
+                       "...... main   main   main   main   ......"
+                       "...... main   main   main   main   ......"
+                       "...... main   main   main   main   ......"
+                       "...... main   main   main   main   ......"
+                       "footer footer footer footer footer footer";
+
+
+}

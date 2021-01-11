@@ -1,0 +1,8 @@
+@use '../../base.module';
+
+.main {
+  grid-area: main;
+  display: grid;
+  grid-template-rows: [top-main] 1fr [middle-main] 2fr [bottom-main];
+
+}

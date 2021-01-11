@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Haiku} from "./Haiku";
+import { Haiku } from "./Haiku";
 import './HaikuList.module.scss';
 
 export default class HaikuList extends Component {
@@ -9,19 +9,22 @@ export default class HaikuList extends Component {
 
     render() {
         const { haikus } = this.props;
-        console.log('render haiku list ', haikus);
-        return (
-            <>
-                <h4 className="haikus__title">mes derniers haikus</h4>
-                <ul className="haikus__list">
-                    { haikus && haikus.map((haiku, index) => (
 
-                        <Haiku key={ haiku.title + index } haiku={ haiku } />
-                    ))}
-                </ul>
-            </>
+
+        return(
+               <div className="haikusList">
+                   <div className="haikusList__title">
+                       Mes derniers haïkus
+                   </div>
+                   <hr className="haikusList__separator"/>
+                   { haikus && haikus.map((h, i) => (
+                       <Haiku key={ h.title + i } haiku={ h } />
+                   ))}
+               </div>
+
         )
     }
 }
+
 
 

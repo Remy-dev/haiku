@@ -1,20 +1,5 @@
-@font-face {
-  font-family: 'OpenSansCondensed-light';
-  src: url("../../assets/fonts/OpenSansCondensed-Light.ttf");
-}
 .landscape {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 75%;
-  img {
-    margin: 0 0.5em 0 0.5em;
-    opacity: 50%;
-    border-radius: 25px;
-
-  }
-  .landscape__presentation {
-    font-family: OpenSansCondensed-light, serif;
-  }
+  border: 1px solid red;
+  grid-template-columns: 2fr 1fr;
 
 }

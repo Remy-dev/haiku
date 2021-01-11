@@ -1,11 +1,13 @@
 {
-  "build/0.cfcbee70.js": "/build/0.cfcbee70.js",
-  "build/1.98048b5b.css": "/build/1.98048b5b.css",
-  "build/1.edcf0900.js": "/build/1.edcf0900.js",
-  "build/app.css": "/build/app.5b8b5316.css",
-  "build/app.js": "/build/app.46ac69ea.js",
-  "build/runtime.js": "/build/runtime.77bd4db9.js",
-  "build/fonts/OpenSansCondensed-Light.ttf": "/build/fonts/OpenSansCondensed-Light.e1803add.ttf",
-  "build/fonts/Quintessential-Regular.ttf": "/build/fonts/Quintessential-Regular.e77f0069.ttf",
-  "build/images/fisherman-2739115_1280.cde2641d.jpg": "/build/images/fisherman-2739115_1280.cde2641d.jpg"
+  "build/0.js": "/build/0.js",
+  "build/app.css": "/build/app.css",
+  "build/app.js": "/build/app.js",
+  "build/runtime.js": "/build/runtime.js",
+  "build/vendors~app.js": "/build/vendors~app.js",
+  "build/fonts/CormorantGaramond-Regular.ttf": "/build/fonts/CormorantGaramond-Regular.e1f2c50e.ttf",
+  "build/fonts/CormorantGaramond-SemiBold.ttf": "/build/fonts/CormorantGaramond-SemiBold.b2e09996.ttf",
+  "build/images/fisherman-2739115_1280.jpg": "/build/images/fisherman-2739115_1280.cde2641d.jpg",
+  "build/0.css": "/build/0.css",
+  "build/1.css": "/build/1.css",
+  "build/1.js": "/build/1.js"
 }

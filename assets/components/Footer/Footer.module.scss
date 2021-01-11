@@ -1,14 +1,8 @@
+
+@use '../../base.module';
+
 .footer {
-  background-image: linear-gradient(to bottom, rgba(204,235,242,0), rgba(204,235,242,1));
-  width: 100%;
-  min-height: 20vh;
+  grid-area: footer;
   border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  .footer__link {
-    margin-left: 2em;
-    color: darkslateblue;
-  }
+
 }

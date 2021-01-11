@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Quintessential-Regular';
+  src: url("../../../assets/fonts/Quintessential-Regular.ttf");
+}
+.haikusList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  .haikusList__separator {
+    width: 75%;
+  }
+  .haikusList__list {
+    display: flex;
+    height: auto;
+    width: 50%;
+    margin: 0.5em 2em 2em 2em;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .haikusList__title {
+    font-size: 2em;
+    font-family: Quintessential-Regular, serif;
+    text-transform: capitalize;
+    margin: 2em 0 0 0;
+  }
+
+}

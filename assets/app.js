@@ -1,3 +1,4 @@
+
 import React, { Component, lazy, Suspense } from 'react';
 import ReactDom from 'react-dom';
 
@@ -5,14 +6,13 @@ import Header from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import NotFound from "./components/NotFound/NotFound";
 
-import Landscape from "./components/Landscape/Landscape";
-import './app.module.scss';
+import './base.module.scss';
 
 import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
 import apiPgsql from "./config/apiPgsql";
 
 
-const LazyHaikuList = lazy(() => import('./features/haikus'))
+const LazyMain = lazy(() => import('./components/Main/Main'))
 
 class App extends Component {
     constructor(props) {
@@ -35,7 +35,7 @@ class App extends Component {
 
     loadingHaikus() {
 
-        apiPgsql.get('/api/haikus/list')
+        apiPgsql.get('/api/homepage/haikus/list')
             .then ( res => {
                     this.setState({
                         haikus: res.data,
@@ -59,20 +59,19 @@ class App extends Component {
     render() {
         const { haikus, homepage } = this.state
         return (
-            <>
+          <>
                 <Header homepage={ homepage }/>
-                <Landscape homepage={ homepage } />
+
                 <Suspense fallback={<h1>Loading...</h1>}>
                     <Switch>
-
-                        <Route exact path="/haikus/all" render={ () => (<LazyHaikuList haikus={ haikus } />)} />
+                        <Route exact path="/haikus/all" render={ () => (<LazyMain homepage={ homepage } haikus={ haikus } />)} />
                         <Redirect from="/" to="/haikus/all" />
                         <Route component={NotFound}/>
                     </Switch>
 
                 </Suspense>
                 <Footer />
-            </>
+         </>
 
         )
     }
@@ -81,8 +80,9 @@ class App extends Component {
 
 
 ReactDom.render(
-    <Router>
-        <App />
-    </Router> ,
+        <Router>
+            <App />
+        </Router>
+    ,
     document.getElementById('root')
 );
