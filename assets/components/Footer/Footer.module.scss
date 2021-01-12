@@ -2,7 +2,15 @@
 @use '../../base.module';
 
 .footer {
+  background-image: linear-gradient(to top, #EEEFF1, white );
   grid-area: footer;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  &__link {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
 }

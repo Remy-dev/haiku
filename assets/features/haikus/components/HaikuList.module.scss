@@ -1,7 +1,16 @@
+@use '../../../base.module';
+
 .haikusList {
-  border: 1px solid green;
+  font-family: base.$font-stack;
+  grid-area: haikusList;
+  text-align: center;
+  padding: 5px;
+  &__title {
+
+  }
+  &__separator {
+    width: 75%;
+  }
 }
 
-.haikusList__separator {
-  width: 75%;
-}
+

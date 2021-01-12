@@ -5,6 +5,7 @@
 }
 $font-stack: CormorantGaramond, sans serif, serif, Arial;
 
+
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +25,14 @@ body {
                        "...... main   main   main   main   ......"
                        "...... main   main   main   main   ......"
                        "footer footer footer footer footer footer";
+  @media (max-width: 375px) {
+    grid-template-columns: 100%;
+    grid-template-rows: min-content  minmax(10%, auto);
+    grid-template-areas: "header"
+                         "main"
+                         "footer";
+    grid-row-gap: 5vh;
+  }
 
 
 }

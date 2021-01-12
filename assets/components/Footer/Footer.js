@@ -5,7 +5,7 @@ import './Footer.module.scss';
 export const Footer = () => (
 
         <div className="footer">
-            <div>
+            <div className="footer__link">
                 <Link to="/whoAmI" className="footer__link">Qui suis-je</Link>
                 <Link to="/contact" className="footer__link">Contact</Link>
             </div>

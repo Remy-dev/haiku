@@ -13,9 +13,9 @@ export default class HaikuList extends Component {
 
         return(
                <div className="haikusList">
-                   <div className="haikusList__title">
+                   <h3 className="haikusList__title">
                        Mes derniers haïkus
-                   </div>
+                   </h3>
                    <hr className="haikusList__separator"/>
                    { haikus && haikus.map((h, i) => (
                        <Haiku key={ h.title + i } haiku={ h } />

@@ -1,8 +1,15 @@
 @use '../../base.module';
 
 .main {
+  margin: 0 5px 0 5px;
   grid-area: main;
   display: grid;
-  grid-template-rows: [top-main] 1fr [middle-main] 2fr [bottom-main];
+  @media (max-width: 375px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "landscape"
+                         "haikusList";
+
+  }
 
 }

@@ -22,4 +22,6 @@ class HomePageController extends AbstractController {
             !empty($homepage) ? Response::HTTP_OK : Response::HTTP_NO_CONTENT
         );
     }
+
+
 }
