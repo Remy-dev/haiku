@@ -6,6 +6,8 @@
       <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/Adduser.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/Listuser.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/conf/axios-conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Form/ContactForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/components/Form/ContactForm.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/index.css" beforeDir="false" />
@@ -13,28 +15,23 @@
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/src/logo.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Dyma/React/axios_raining/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/base.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/base.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Footer/Footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/components/Footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Footer/Footer.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Header/Header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/components/Header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/components/Landscape/Landscape.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Landscape/Landscape.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/components/Landscape/Landscape.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Landscape/Landscape.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/components/Main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Main/Main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/components/Main/Main.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/components/Main/Main.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/features/haikus/components/Haiku.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/features/haikus/components/Haiku.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/features/haikus/components/HaikuList.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/0.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/0.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/0.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/1.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/0.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/build/0.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/runtime.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/runtime.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/build/vendors~app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/vendors~app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomePageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomePageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -220,7 +217,9 @@
       <workItem from="1610182697373" duration="4986000" />
       <workItem from="1610272179923" duration="15396000" />
       <workItem from="1610368498197" duration="11263000" />
-      <workItem from="1610458163171" duration="15061000" />
+      <workItem from="1610458163171" duration="15900000" />
+      <workItem from="1610545343601" duration="7221000" />
+      <workItem from="1610641203914" duration="6667000" />
     </task>
     <servers />
   </component>

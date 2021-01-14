@@ -9,8 +9,29 @@
   align-items: center;
 
   &__link {
+    color: #6F6E6E;
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
+
+    &:-webkit-any-link{
+      text-decoration: none;
+    }
+    &:-moz-any-link {
+      text-decoration: none;
+    }
   }
+
+  @media (max-width: 375px) {
+    padding-bottom: 10px;
+
+    &__link {
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 10px;
+      color: #6F6E6E;
+
+    }
+  }
+
 }

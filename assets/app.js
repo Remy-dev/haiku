@@ -4,15 +4,15 @@ import ReactDom from 'react-dom';
 
 import Header from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
-import NotFound from "./components/NotFound/NotFound";
+import Main from './components/Main/Main';
 
 import './base.module.scss';
 
-import { BrowserRouter as Router, Redirect, Switch, Route } from "react-router-dom";
+import {BrowserRouter as Router, Switch} from "react-router-dom";
 import apiPgsql from "./config/apiPgsql";
 
 
-const LazyMain = lazy(() => import('./components/Main/Main'))
+
 
 class App extends Component {
     constructor(props) {
@@ -59,19 +59,12 @@ class App extends Component {
     render() {
         const { haikus, homepage } = this.state
         return (
-          <>
-                <Header homepage={ homepage }/>
+            <Suspense fallback={<h1>Loading...</h1>}>
 
-                <Suspense fallback={<h1>Loading...</h1>}>
-                    <Switch>
-                        <Route exact path="/haikus/all" render={ () => (<LazyMain homepage={ homepage } haikus={ haikus } />)} />
-                        <Redirect from="/" to="/haikus/all" />
-                        <Route component={NotFound}/>
-                    </Switch>
-
-                </Suspense>
-                <Footer />
-         </>
+                    <Header homepage={ homepage }/>
+                    <Main homepage={ homepage } haikus={ haikus } />
+                    <Footer />
+            </Suspense>
 
         )
     }

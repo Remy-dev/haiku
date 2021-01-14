@@ -1,6 +1,7 @@
 @use '../../../base.module';
 
 .haikusList {
+  margin-top: 0;
   font-family: base.$font-stack;
   grid-area: haikusList;
   text-align: center;

@@ -1,0 +1,17 @@
+@use '../Main/Main.module';
+
+.main {
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+
+  &__firstname &__lastname &__email &__topic &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

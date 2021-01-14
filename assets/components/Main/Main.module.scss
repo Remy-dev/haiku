@@ -1,14 +1,19 @@
 @use '../../base.module';
 
 .main {
-  margin: 0 5px 0 5px;
+
   grid-area: main;
   display: grid;
+  grid-template: "landscape" auto
+                 "haikusList" auto
+                 / 100%;
+
+
   @media (max-width: 375px) {
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto;
-    grid-template-areas: "landscape"
-                         "haikusList";
+    margin: 0 5px 0 5px;
+    grid-template: "landscape" auto
+                   "haikusList" auto
+                   / 100%;
 
   }
 

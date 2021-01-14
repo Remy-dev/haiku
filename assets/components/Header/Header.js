@@ -3,21 +3,24 @@ import {NavLink} from "react-router-dom";
 import './Header.module.scss';
 
 
-const Button = () => (
-
-        <button type="button" className="navBar__btn">
+const Button = ({ onClick, isToggleOn }) => (
+    <>
+        <button onClick={() => onClick() } type="button" className="navBar__btn">
             <div className="line"></div>
             <div className="line"></div>
             <div className="line"></div>
         </button>
+        { isToggleOn && <NavBar /> }
+    </>
+
+
 );
 
 const NavBar = () => (
     <div className="header__navBar">
-
-        <NavLink to="/haikus/all" activeClassName="active" className="header__navBar-link">Accueil</NavLink>
-        <NavLink to="/haikus/meshaikus" className="header__navBar-link">Mes Haïkus</NavLink>
-        <NavLink to="/haikus/rose" className="header__navbar-link">Rose</NavLink>
+        <NavLink to="/haikus/homepage" activeClassName="active" className="header__navBar--link">Accueil</NavLink>
+        <NavLink to="/haikus/all" className="header__navBar--link">Haïkus</NavLink>
+        <NavLink to="/haikus/prose" className="header__navBar--link">Prose</NavLink>
     </div>
 )
 
@@ -31,10 +34,8 @@ class Header extends Component {
 
     }
     componentDidMount() {
-        let buttonClickEvent = document.getElementsByClassName(".navBar__btn") ? document.getElementsByClassName(".navBar__btn") : null;
         this.updatePredicate();
         window.addEventListener("resize", this.updatePredicate);
-        { this.state.isPhoneViewport && buttonClickEvent.addEventListener("click", this.displayMenu) }
 
     }
 
@@ -46,15 +47,14 @@ class Header extends Component {
     }
 
     componentWillUnmount() {
-        let buttonClickEvent = document.getElementsByClassName(".navBar__btn") && document.getElementsByClassName(".navBar__btn");
         window.removeEventListener("resize", this.updatePredicate);
-        { this.state.isPhoneViewport && buttonClickEvent.addEventListener("click", this.displayMenu) }
     }
 
     displayMenu = () => {
-        console.log('click', this.state.isToggleOn);
-        this.setState( state => {
-            !state.isToggleOn
+        const { isToggleOn } = this.state;
+
+        this.setState({
+            isToggleOn: !isToggleOn
         })
 
     }
@@ -69,11 +69,7 @@ class Header extends Component {
                 <h1>{homepage.title}</h1>
 
                     { this.state.isPhoneViewport ? (
-                        <Button onClick={ this.displayMenu } >
-                            { this.state.isToggleOn ? (
-                                <NavBar />
-                            ) : null}
-                        </Button>
+                        <Button onClick={ this.displayMenu } isToggleOn={ this.state.isToggleOn } />
                     ) : (
                         <NavBar  />
                     )}
