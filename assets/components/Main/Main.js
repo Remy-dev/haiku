@@ -24,7 +24,11 @@ class Main extends Component {
                         </div>
                     )} />
                     <Route exact path="/haikus/all" />
-                    <Route exact path="/contact"  component={ ContactForm }/>
+                    <Route exact path="/contact"  render={ () => (
+                        <div className="main">
+                            <ContactForm />
+                        </div>
+                    )}/>
                     <Redirect from="/" to="/haikus/homepage" />
                     <Route component={NotFound} />
                 </Switch>

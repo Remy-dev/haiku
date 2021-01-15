@@ -10,7 +10,7 @@ export const Footer = () => (
                 <Link to="/contact" className="footer__link">Contact</Link>
             </div>
 
-            <div className="copyright">
+            <div className="footer__copyright">
                 <span>Copyright &copy; Véronique Manchon - auteur du blog</span>
             </div>
         </div>

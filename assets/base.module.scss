@@ -17,19 +17,18 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template: "header header header " minmax(auto, 10vh)
-                 "...... main   ......" 1fr
-                 "...... main   ......" 1fr
-                 "...... main   ......" 1fr
-                 "...... main   ......" 1fr
-                 "footer footer footer" minmax(auto, 10vh)
-                 / 20% 1fr 20%;
+  grid-template-columns: 20% 1fr 20%;
+  grid-template-rows: minmax(10%, 10vh) 1fr minmax(10%, 10vh);
+  grid-template-areas: "header header header"
+                       ".....  main   ......"
+                       "footer footer footer";
+
   grid-row-gap: 10%;
 
   @media (max-width: 375px) {
 
     grid-template: "header" min-content
-                   "main"
+                   "main" 100%
                    "footer" min-content
                    / 100%;
     grid-row-gap: 5vh;

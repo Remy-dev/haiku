@@ -5,15 +5,17 @@
   grid-area: main;
   display: grid;
   grid-template: "landscape" auto
-                 "haikusList" auto
+                 "haikuList" auto
+
                  / 100%;
 
 
   @media (max-width: 375px) {
     margin: 0 5px 0 5px;
-    grid-template: "landscape" auto
-                   "haikusList" auto
+    grid-template: "....." auto
+                   "....." 1fr
                    / 100%;
+
 
   }
 

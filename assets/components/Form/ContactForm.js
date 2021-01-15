@@ -1,53 +1,82 @@
 import React, { Component } from 'react';
-import { Formik } from 'formik';
+import {Formik, Field, ErrorMessage, FieldArray} from 'formik';
 import './ContactForm.module.scss';
+import * as Yup from 'yup';
+
+
+const CustomInput = ({ field, form, ...props}) => {
+    return(
+        <div className={ "form__" + field.name }>
+            <label htmlFor={ field.name }>{ field.name }</label>
+            <input { ...field } { ...props } id={field.name} name={field.name} />
+
+        </div>
+    )
+}
+
+const CustomTextarea = ({ field, form, ...props}) => {
+    return (
+        <div className="form__body">
+            <label htmlFor={ props.label }>Message</label>
+            <textarea { ...field } id="body" name="body"  maxLength="500" placeholder="Bonjour...."/>
+        </div>
+    )
+}
+
+const CustomError = (props) => {
+    return (
+        <div className="form__error">{ props.children }</div>
+    )
+}
 
 class ContactForm extends Component {
 
-    submit = (values, actions) => {
+    userSchema = Yup.object().shape({
+        firstname: Yup.string().min(2, 'minimun 2 caractères').max(20, 'la saisie est trop longue').required('champ requis'),
+        lastname: Yup.string().min(2, 'minimun 2 caractères').max(20, 'la saisie est trop longue').required('champ requis'),
+        email: Yup.string().email('mauvais email').required('champ requis'),
+        topic: Yup.string().min(2, 'le sujet doit comporter au moins 2 caractères').max(50, 'la saisie est trop longue').required('champ requis'),
+        body: Yup.string().min(10, 'le texte doit être intelligible').max(500, 'trop long').required('champ requis')
+    });
 
+    submit = (values, actions) => {
+        console.log(actions);
+        actions.setSubmitting(false);
     }
+
+
 
     render() {
         return (
-            <>
+
                 <Formik
-                    initialValues={ { firstname: '', lastname: '', email: '', topic: '', body: '' } }
+                    initialValues={ { firstname: '', lastname: '', email: '', topic: '', body: '', items: [] } }
                     onSubmit={ this.submit }
+                    validationSchema={ this.userSchema }
+
                 >
                     { ({
-                        handleChange,
                         handleSubmit,
-                        handleBlur,
-                        values,
-                        isSubmitting
+                        isSubmitting,
                        }) => (
                         <form onSubmit={ handleSubmit } className="form">
-                            <div className="form__firstname">
-                                <label htmlFor="firstname">Nom</label>
-                                <input value={ values.firstname } onChange={ handleChange } onBlur={ handleBlur } type="text" id="firstname" name="firstname" />
-                            </div>
-                            <div className="form__lastname">
-                                <label htmlFor="lastname">Prénom</label>
-                                <input value={ values.lastname } onChange={ handleChange } onBlur={ handleBlur } type="text" id="lastname" name="lastname" />
-                            </div>
-                            <div className="email">
-                                <label htmlFor="email">Email</label>
-                                <input value={ values.email } onChange={ handleChange } onBlur={ handleBlur } type="email" id="email" name="email" />
-                            </div>
-                            <div className="topic">
-                                <label htmlFor="topic">Sujet</label>
-                                <input value={ values.topic } onChange={ handleChange } onBlur={ handleBlur } type="text" id="topic" name="topic" />
-                            </div>
-                            <div className="body">
-                                <label htmlFor="body">Votre Message</label>
-                                <textarea value={ values.body } onChange={ handleChange } onBlur={ handleBlur } id="body" name="body" rows="10" cols="30" placeholder="Bonjour...."/>
-                            </div>
+                            <Field name="firstname"  component={ CustomInput } />
+                            <ErrorMessage name="firstname" component={ CustomError } />
+                            <Field name="lastname"  component={ CustomInput }  />
+                            <ErrorMessage name="lastname" component={ CustomError } />
+                            <Field name="email"  component={ CustomInput }  />
+                            <ErrorMessage name="email" component={ CustomError } />
+                            <Field name="topic"  component={ CustomInput }  />
+                            <ErrorMessage name="topic" component={ CustomError } />
+                            <Field name="body"  component={ CustomTextarea } />
+                            <ErrorMessage name="body" component={ CustomError } />
+
+
                             <button className="form__button" type="submit" disabled={ isSubmitting }>Envoyer</button>
                         </form>
                     )}
                 </Formik>
-            </>
+
         )
     }
 }

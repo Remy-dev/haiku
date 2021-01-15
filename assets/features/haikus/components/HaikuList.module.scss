@@ -3,7 +3,7 @@
 .haikusList {
   margin-top: 0;
   font-family: base.$font-stack;
-  grid-area: haikusList;
+  grid-area: haikuList;
   text-align: center;
   padding: 5px;
   &__title {
@@ -11,6 +11,10 @@
   }
   &__separator {
     width: 75%;
+  }
+  @media (max-width: 375px) {
+    grid-column: span 2;
+
   }
 }
 

@@ -11,6 +11,8 @@
   }
 
   @media(max-width: 375px) {
+    grid-column: span 2;
+    grid-row: 1;
     padding: 5px;
     margin: 0;
     display: flex;
