@@ -1,32 +1,104 @@
 @use '../../base.module';
 @use '../Main/Main.module';
 
+
 $color-input: rgba(227, 228, 228, 10);
 $input-shadow-size: 0.10rem;
+
+@mixin darker-border($color, $size, $style) {
+  border: $size $style darken($color, 10%);
+};
+
 
 @mixin form-input-shadow($color: $color-input, $size: $input-shadow-size ) {
   box-shadow: inset $size $size  darken($color, 10%);
 }
+@mixin darker-box-shadow($color, $size) {
+  box-shadow: $size $size $size darken($color, 10%);
+}
+.contact {
+  font-family: base.$font-stack;
+  padding: 2em;
+  letter-spacing: 1px;
+
+}
+.message {
+  @include darker-box-shadow(darkseagreen, 2px);
+  @include darker-border(darkseagreen, 1px, solid);
+  padding: 4px;
+  background-color: darkseagreen;
+  width: 80%;
+  color: white;
+  text-align: center;
+}
+
+.error {
+  @include darker-box-shadow(#ba8b8b, 2px);
+  @include darker-border(#ba8b8b, 1px, solid);
+  padding: 2px;
+  background-color: #ba8b8b;
+  width: 80%;
+  color: white;
+  text-align: center;
+}
 
 .form {
 
-   grid-row-start: 1 ;
-
+   font-family: base.$font-stack;
+   width: 80%;
+   margin: 5% 10%;
+   grid-row: span 2;
    display: grid;
-   grid-template: 1fr
-                  1fr
-                  1fr
-                  1fr
-                  1fr
+   grid-template: auto
+                  auto
+                  auto
+                  auto
+                  auto
                   / 100%;
-   align-items: center;
+
+
+  &__btn--submit {
+    justify-self: center;
+    background-color: #f5f5e6;
+    width: 20%;
+    border: 0;
+    padding: 5px;
+    @include darker-box-shadow(#f5f5e6, 2px);
+    letter-spacing: 1px;
+  }
 
   &__firstname, &__lastname, &__email, &__topic, &__body, &__button{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 80%;
+    margin-bottom: 5%;
+
+
+
+    input {
+      @include form-input-shadow;
+      border: $color-input 1px solid;
+      border-radius: 5%;
+      width: 100%;
+      margin-top: 5px;
+      padding: 2px;
+
+    }
+
   }
+  &__body--labelLength {
+    font-style: oblique;
+    color: #999999;
+  }
+  textarea {
+    @include form-input-shadow;
+    padding: 5px;
+    width: 100%;
+    resize: none;
+    border: $color-input 1px solid;
+    height: 10vh;
+  }
+
+
   &__error {
     color: red;
   }
@@ -36,7 +108,7 @@ $input-shadow-size: 0.10rem;
   @media (max-width: 375px) {
     grid-row: span 2;
     grid-gap: 5px;
-    font-family: base.$font-stack;
+
 
     align-items: center;
     &__error {
@@ -48,30 +120,10 @@ $input-shadow-size: 0.10rem;
       align-self: center;
       width: 80%;
 
-      input {
-        @include form-input-shadow;
-        border: $color-input 1px solid;
-        border-radius: 5%;
-        padding: 2px;
-
-      }
-
     }
 
-    textarea {
-      @include form-input-shadow;
-      padding: 5px;
-      width: 100%;
-      height: 20vh;
-      border: $color-input 1px solid;
-    }
-    &__button {
-      margin-top: 1em;
-      width: auto;
-      height: auto;
-      text-align: center;
-      border: $color-input 1px solid;
-    }
+
+
   }
 
 }

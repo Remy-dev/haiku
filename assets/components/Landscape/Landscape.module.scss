@@ -2,7 +2,7 @@
 
 .landscape {
   font-family: base.$font-stack;
-  grid-area: landscape;
+  grid-row: 1;
   &__title {
     text-align: center;
   }

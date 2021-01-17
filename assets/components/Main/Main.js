@@ -1,4 +1,4 @@
-import React, { Component, lazy, Suspense } from 'react';
+import React, { Component } from 'react';
 
 import Landscape from "../Landscape/Landscape";
 import HaikuList from "../../features/haikus/components/HaikuList";
@@ -23,7 +23,11 @@ class Main extends Component {
                             <HaikuList haikus={ haikus } />
                         </div>
                     )} />
-                    <Route exact path="/haikus/all" />
+                    <Route exact path="/haikus/all">
+                        <div className="compendium">
+
+                        </div>
+                    </Route>
                     <Route exact path="/contact"  render={ () => (
                         <div className="main">
                             <ContactForm />

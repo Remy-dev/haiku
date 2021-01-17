@@ -1,9 +1,9 @@
 @use '../../../base.module';
+@use '../../../components/Main/Main.module';
 
 .haikusList {
-  margin-top: 0;
+
   font-family: base.$font-stack;
-  grid-area: haikuList;
   text-align: center;
   padding: 5px;
   &__title {

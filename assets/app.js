@@ -1,5 +1,5 @@
 
-import React, { Component, lazy, Suspense } from 'react';
+import React, { Component, Suspense } from 'react';
 import ReactDom from 'react-dom';
 
 import Header from './components/Header/Header';
@@ -8,7 +8,7 @@ import Main from './components/Main/Main';
 
 import './base.module.scss';
 
-import {BrowserRouter as Router, Switch} from "react-router-dom";
+import {BrowserRouter as Router} from "react-router-dom";
 import apiPgsql from "./config/apiPgsql";
 
 
@@ -60,7 +60,6 @@ class App extends Component {
         const { haikus, homepage } = this.state
         return (
             <Suspense fallback={<h1>Loading...</h1>}>
-
                     <Header homepage={ homepage }/>
                     <Main homepage={ homepage } haikus={ haikus } />
                     <Footer />

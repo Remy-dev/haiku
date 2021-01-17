@@ -4,10 +4,12 @@
 
   grid-area: main;
   display: grid;
-  grid-template: "landscape" auto
-                 "haikuList" auto
+  grid: "....." min-content
+        "....." fit-content(70%)
+        / 100%;
+  justify-content: center;
+  justify-items: center;
 
-                 / 100%;
 
 
   @media (max-width: 375px) {
