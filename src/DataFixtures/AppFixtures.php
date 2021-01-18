@@ -4,18 +4,21 @@ namespace App\DataFixtures;
 
 use App\Factory\HaikuFactory;
 use App\Factory\HomePageFactory;
+use App\Factory\ThemeFactory;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 
 class AppFixtures extends Fixture
 {
     public function load (ObjectManager $manager) {
-        $h = 10;
 
-        for($i = 0; $i <= $h; $i++){
-            $haiku = HaikuFactory::new()->create()->object();
-            $manager->persist($haiku);
-        }
+        ThemeFactory::new()->createMany(5);
+        HaikuFactory::new()->createMany(30, function() {
+            return [
+                'theme' => ThemeFactory::random()
+            ];
+        });
+
         $homepage = HomePageFactory::new([
             'title' => 'fu un kai',
             'subTitle' => 'Haiku\'s Snapshots, My Feelings Over Clouds',

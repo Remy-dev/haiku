@@ -21,10 +21,25 @@ class HaikuController extends AbstractController
 
         return $this->json(
             $haikus,
-            !empty($haikus) ? Response::HTTP_OK : Response::HTTP_NO_CONTENT
+            !empty($haikus) ? Response::HTTP_OK : Response::HTTP_NO_CONTENT,
+            [],
+            ['groups' => 'list_haiku']
         );
 
     }
 
+    /**
+     * @Route("/api/years/list", name="years_list", methods={"GET"})
+     */
+    public function yearOfHaikus(HaikuRepository $repository): Response
+    {
 
+        $years = $repository->getListOfYears();
+        dump($years);
+        return $this->json(
+            $years,
+            !empty($years) ? Response::HTTP_OK : Response::HTTP_NO_CONTENT
+        );
+
+    }
 }

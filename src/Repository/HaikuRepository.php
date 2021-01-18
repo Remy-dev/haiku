@@ -19,6 +19,15 @@ class HaikuRepository extends ServiceEntityRepository
         parent::__construct($registry, Haiku::class);
     }
 
+
+    public function getListOfYears() {
+       return $this->createQueryBuilder('h')
+            ->select( 'MIN(h.id) AS id, h.year')
+            ->groupBy('h.year')
+            ->getQuery()
+            ->getResult()
+        ;
+    }
     // /**
     //  * @return Haiku[] Returns an array of Haiku objects
     //  */

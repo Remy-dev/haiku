@@ -4,6 +4,7 @@ import Landscape from "../Landscape/Landscape";
 import HaikuList from "../../features/haikus/components/HaikuList";
 import NotFound from "../NotFound/NotFound";
 import ContactForm from "../Form/ContactForm";
+import Compendium from "../Compendium/Compendium";
 
 import './Main.module.scss';
 import {Redirect, Route, Switch} from "react-router-dom";
@@ -24,8 +25,8 @@ class Main extends Component {
                         </div>
                     )} />
                     <Route exact path="/haikus/all">
-                        <div className="compendium">
-
+                        <div className="main">
+                            <Compendium />
                         </div>
                     </Route>
                     <Route exact path="/contact"  render={ () => (

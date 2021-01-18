@@ -4,6 +4,8 @@ namespace App\Entity;
 
 use App\Repository\HaikuRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
+use Symfony\Component\Serializer\Annotation\MaxDepth;
 use Symfony\Component\Validator\Constraints as Assert;
 
 /**
@@ -16,23 +18,27 @@ class Haiku
      * @ORM\Id
      * @ORM\GeneratedValue
      * @ORM\Column(type="integer")
+     * @Groups("list_haiku")
      */
     private $id;
 
     /**
      * @ORM\Column(type="string", length=255)
      * @Assert\NotBlank()
+     * @Groups("list_haiku")
      */
     private $title;
 
     /**
      * @ORM\Column(type="text")
      * @Assert\NotBlank()
+     * @Groups("list_haiku")
      */
     private $content;
 
     /**
      * @ORM\Column(type="datetime")
+     *
      */
     private $createdAt;
 
@@ -41,15 +47,17 @@ class Haiku
      */
     private $updatedAt;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $theme;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $year;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Theme::class, inversedBy="haikus")
+     * @MaxDepth(1)
+     */
+    private $theme;
 
     public function getId(): ?int
     {
@@ -87,6 +95,8 @@ class Haiku
     {
         $this->createdAt = new \Datetime('now');
         $this->updatedAt = new \Datetime('now');
+        $year = new \Datetime('now'.date('Y'));
+        $this->year = (int) $year->format('Y');
     }
 
     /**
@@ -96,6 +106,7 @@ class Haiku
     {
         $this->updatedAt = new \Datetime('now');
     }
+
 
     public function getCreatedAt(): ?\DateTimeInterface
     {
@@ -121,18 +132,6 @@ class Haiku
         return $this;
     }
 
-    public function getTheme(): ?string
-    {
-        return $this->theme;
-    }
-
-    public function setTheme(string $theme): self
-    {
-        $this->theme = $theme;
-
-        return $this;
-    }
-
     public function getYear(): ?int
     {
         return $this->year;
@@ -141,6 +140,18 @@ class Haiku
     public function setYear(int $year): self
     {
         $this->year = $year;
+
+        return $this;
+    }
+
+    public function getTheme(): ?Theme
+    {
+        return $this->theme;
+    }
+
+    public function setTheme(?Theme $theme): self
+    {
+        $this->theme = $theme;
 
         return $this;
     }

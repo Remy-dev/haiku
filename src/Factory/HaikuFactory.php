@@ -31,6 +31,7 @@ final class HaikuFactory extends ModelFactory
         return [
             'title' => self::faker()->unique()->sentence,
             'content' => self::faker()->sentence,
+
         ];
     }
 
