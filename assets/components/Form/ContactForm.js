@@ -43,6 +43,7 @@ const MessageSubmit = ({ state }) => {
 class ContactForm extends Component {
     constructor(props) {
         super(props);
+        this.input = React.forwardRef();
 
         this.state = {
             message: '',
@@ -86,6 +87,9 @@ class ContactForm extends Component {
         console.log(actions);
     }
 
+    componentDidMount() {
+        this.input.current.focus();
+    }
 
 
     render() {
@@ -112,12 +116,11 @@ class ContactForm extends Component {
                                 }
 
                                 <form onSubmit={ handleSubmit } className="form">
-                                    <Field name="firstname"  component={ CustomInput } />
+                                    <Field name="firstname" ref={ this.input }  component={ CustomInput } />
                                     <Field name="lastname"  component={ CustomInput }  />
                                     <Field name="email"  component={ CustomInput }  />
                                     <Field name="topic"  component={ CustomInput }  />
                                     <Field name="body"  component={ CustomTextarea } />
-
 
                                     <button className="form__btn--submit" type="submit" disabled={ isSubmitting }>Soumettre</button>
                                 </form>
